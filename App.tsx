@@ -18,10 +18,9 @@ const App: React.FC = () => {
       <Navbar />
       <main className="flex-grow pt-32 pb-10 w-full">
         <Hero />
-        <LogoTicker />
+        <Integrations />
         <ProductShowcase />
         <Features />
-        <Integrations />
         <Pricing />
         <SuccessStories />
         <Testimonials />
