@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
 
         {/* Left Column: Text Content */}
         <div className="space-y-8 max-w-2xl">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-gray-900 leading-[1.1]">
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-semibold tracking-tight text-gray-900 leading-[1.1]">
             Estrutura de gestão para empresas que buscam previsibilidade, escala e decisões orientadas por dados
           </h1>
 
