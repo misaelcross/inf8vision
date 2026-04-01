@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
                     {area}
                   </span>
                   {i < areas.length - 1 && (
-                    <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-5 h-5 md:w-7 md:h-7 bg-black rounded-full flex items-center justify-center shadow-sm">
+                    <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-[15px] h-[15px] md:w-7 md:h-7 bg-black rounded-full flex items-center justify-center shadow-sm">
                       <ArrowRight size={9} className="text-white md:hidden" />
                       <ArrowRight size={12} className="text-white hidden md:block" />
                     </div>
