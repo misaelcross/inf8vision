@@ -10,11 +10,13 @@ import SuccessStories from './components/SuccessStories';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans text-slate-900 overflow-x-hidden">
       <Navbar />
+      <WhatsAppButton />
       <main className="flex-grow pt-32 pb-10 w-full">
         <Hero />
         <Integrations />
