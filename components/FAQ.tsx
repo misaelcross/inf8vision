@@ -40,9 +40,6 @@ const FAQ: React.FC = () => {
           <p className="text-sm md:text-lg text-gray-500 mb-8 leading-relaxed">
             Tire suas dúvidas sobre como podemos transformar a gestão da sua empresa através dos dados.
           </p>
-          <a href="#contact" className="inline-block border border-gray-900 text-gray-900 text-base font-medium px-8 py-3 rounded-full hover:bg-gray-900 hover:text-white transition-colors duration-300">
-            Fale conosco
-          </a>
         </div>
 
         {/* Right Column: Accordion Container - Matching Features Tabs Container Colors */}

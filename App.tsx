@@ -18,12 +18,12 @@ const App: React.FC = () => {
       <main className="flex-grow pt-32 pb-10 w-full">
         <Hero />
         <Integrations />
-        <ProductShowcase />
         <Features />
+        <Contact />
+        <ProductShowcase />
         <Pricing />
         <SuccessStories />
         <FAQ />
-        <Contact />
         <Footer />
       </main>
     </div>

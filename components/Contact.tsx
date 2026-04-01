@@ -27,11 +27,6 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="space-y-8 mt-auto">
-              <div className="space-y-1">
-                 <div className="text-gray-400 text-lg font-medium">Fale conosco</div>
-                 <div className="text-white text-3xl font-medium tracking-tight hover:text-[#fef7af] transition-colors cursor-pointer">contato@inf8vision.com</div>
-              </div>
-
               {/* Stats/Badge */}
               <div className="inline-flex items-center gap-4 py-3 px-5 rounded-full bg-white/5 border border-white/5 backdrop-blur-md">
                  <div className="flex -space-x-2">
@@ -54,7 +49,7 @@ const Contact: React.FC = () => {
                 <input 
                   type="text" 
                   placeholder="Seu nome"
-                  className="w-full bg-black/20 border border-white/10 focus:border-white/30 focus:bg-black/40 rounded-2xl px-5 py-4 text-gray-200 placeholder-gray-600 outline-none transition-all"
+                  className="w-full bg-black/20 border border-white/10 focus:border-white/30 focus:bg-black/40 rounded-2xl px-5 py-4 text-gray-200 placeholder-gray-400 outline-none transition-all"
                 />
               </div>
 
@@ -64,7 +59,7 @@ const Contact: React.FC = () => {
                 <input 
                   type="email" 
                   placeholder="nome@empresa.com.br"
-                  className="w-full bg-black/20 border border-white/10 focus:border-white/30 focus:bg-black/40 rounded-2xl px-5 py-4 text-gray-200 placeholder-gray-600 outline-none transition-all"
+                  className="w-full bg-black/20 border border-white/10 focus:border-white/30 focus:bg-black/40 rounded-2xl px-5 py-4 text-gray-200 placeholder-gray-400 outline-none transition-all"
                 />
               </div>
 
@@ -74,14 +69,14 @@ const Contact: React.FC = () => {
                 <textarea 
                   placeholder="Fale um pouco sobre sua empresa..."
                   rows={4}
-                  className="w-full bg-black/20 border border-white/10 focus:border-white/30 focus:bg-black/40 rounded-2xl px-5 py-4 text-gray-200 placeholder-gray-600 outline-none transition-all resize-none"
+                  className="w-full bg-black/20 border border-white/10 focus:border-white/30 focus:bg-black/40 rounded-2xl px-5 py-4 text-gray-200 placeholder-gray-400 outline-none transition-all resize-none"
                 ></textarea>
               </div>
 
               {/* Submit Button - Matching Pricing Section */}
               <div className="pt-2">
                 <button type="button" className="w-full bg-[#fef7af] hover:bg-[#eae39e] text-black font-semibold py-4 rounded-full flex items-center justify-center gap-3 transition-all group shadow-[0_0_20px_rgba(254,247,175,0.1)]">
-                  <span>Falar com um especialista INF8VISION</span>
+                  <span>Enviar</span>
                   <div className="bg-black text-white p-1.5 rounded-full group-hover:translate-x-1 transition-transform">
                     <ArrowRight size={14} strokeWidth={3} />
                   </div>

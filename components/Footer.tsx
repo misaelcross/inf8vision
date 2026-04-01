@@ -1,28 +1,22 @@
 import React from 'react';
-import { Instagram, Linkedin, CornerDownRight } from 'lucide-react';
+import { Instagram, Linkedin, CornerDownRight, Bolt } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
     <footer className="py-20 max-w-7xl mx-auto px-3 md:px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
         
-        {/* Left Column: Newsletter & Contact */}
+        {/* Left Column: Logo + Social + Contact */}
         <div className="flex flex-col justify-between space-y-12">
-          <div>
-            <h3 className="text-2xl text-gray-500 mb-6 font-normal">Assine nossa newsletter</h3>
-            <div className="relative max-w-md">
-              <input
-                type="email"
-                placeholder="seu@email.com"
-                className="w-full bg-white border border-gray-100 rounded-full py-4 pl-6 pr-36 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-900 placeholder-gray-400 shadow-sm"
-              />
-              <button className="absolute right-2 top-2 bottom-2 bg-black text-white px-6 rounded-full font-medium text-sm hover:bg-gray-800 transition-colors">
-                Inscrever
-              </button>
-            </div>
-          </div>
-
           <div className="space-y-8">
+            {/* Logo */}
+            <div className="flex items-center gap-2 font-bold text-2xl text-gray-900">
+              <div className="bg-black text-white p-1.5 rounded-full">
+                <Bolt size={24} fill="currentColor" />
+              </div>
+              <span>INF8VISION</span>
+            </div>
+
             <div className="flex gap-4">
               {/* X (Twitter) Icon */}
               <a href="#" className="w-10 h-10 bg-white border border-gray-100 rounded-full flex items-center justify-center hover:shadow-md transition-all text-gray-900 hover:scale-110">
@@ -39,8 +33,8 @@ const Footer: React.FC = () => {
                 <Linkedin size={18} />
               </a>
             </div>
-            
-            <a href="mailto:contato@inf8vision.com" className="block text-3xl md:text-5xl font-medium text-gray-900 hover:text-gray-600 transition-colors tracking-tight">
+
+            <a href="mailto:contato@inf8vision.com" className="block text-xl md:text-[1.95rem] font-medium text-gray-900 hover:text-gray-600 transition-colors tracking-tight">
               contato@inf8vision.com
             </a>
           </div>
