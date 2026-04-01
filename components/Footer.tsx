@@ -3,7 +3,7 @@ import { Instagram, Linkedin, CornerDownRight } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="py-20 max-w-7xl mx-auto px-6">
+    <footer className="py-20 max-w-7xl mx-auto px-3 md:px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
         
         {/* Left Column: Newsletter & Contact */}

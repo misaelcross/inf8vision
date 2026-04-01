@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
-    <section className="relative w-full py-24 bg-[#1a1f26]">
+    <section id="contact" className="relative w-full py-24 bg-[#1a1f26]">
         
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
       </div>
       
       {/* Content Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-3 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center w-full">
           
           {/* Left Column: Text & Info */}

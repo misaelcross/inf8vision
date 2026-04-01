@@ -6,48 +6,48 @@ const features = [
     number: '01',
     title: 'Crescem sem dominar os próprios números',
     description: 'Decisões baseadas em estimativas, sem acesso a dados reais e atualizados sobre o desempenho do negócio.',
-    image: '/imgs/pexels-oguz-kagan-cevik-247212801-30204603.jpg'
+    image: '/imgs/card-analytics.jpg'
   },
   {
     id: 1,
     number: '02',
     title: 'Utilizam CRM sem processos definidos',
     description: 'A ferramenta existe, mas sem processos claros o pipeline vira caos e oportunidades se perdem.',
-    image: '/imgs/pexels-mikhail-nilov-7988082.jpg'
+    image: '/imgs/CARDSINF8/CRM.webp'
   },
   {
     id: 2,
     number: '03',
     title: 'Investem em marketing sem integração com vendas',
     description: 'Campanhas que geram leads que nunca chegam às mãos corretas, desperdiçando orçamento e oportunidades.',
-    image: '/imgs/pexels-ebertduran-5412005.jpg'
+    image: '/imgs/CARDSINF8/MARKETINGVENDAS.jpg'
   },
   {
     id: 3,
     number: '04',
     title: 'Não possuem metas estruturadas',
     description: 'Crescem por inércia, sem objetivos claros por área, tornando impossível avaliar performance real.',
-    image: '/imgs/pexels-asphotography-95916.jpg'
+    image: '/imgs/card-goals.jpg'
   },
   {
     id: 4,
     number: '05',
     title: 'Não automatizam processos operacionais',
     description: 'Equipes sobrecarregadas com tarefas manuais que consomem tempo e geram retrabalho constante.',
-    image: '/imgs/businessman-making-presentation-with-his-colleagues-business-strategy-digital-layer-effect-office-as-concept.jpg'
+    image: '/imgs/CARDSINF8/AUTOMATIZAR.webp'
   }
 ];
 
 const ProductShowcase: React.FC = () => {
   return (
-    <section className="py-20 max-w-7xl mx-auto px-6">
+    <section className="py-20 max-w-7xl mx-auto px-3 md:px-6">
 
       {/* Section Header */}
       <div className="mb-12">
-        <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight leading-tight max-w-3xl">
+        <h2 className="text-2xl md:text-5xl font-semibold text-gray-900 tracking-tight leading-tight max-w-3xl">
           80% das empresas crescem sem uma estrutura clara de gestão.
         </h2>
-        <p className="text-xl text-gray-500 mt-4 max-w-xl">Isso acontece porque:</p>
+        <p className="text-sm md:text-xl text-gray-500 mt-4 max-w-xl">Isso acontece porque:</p>
       </div>
 
       {/* Feature Cards Area */}
@@ -68,10 +68,10 @@ const ProductShowcase: React.FC = () => {
                 <div className="text-gray-400 text-lg font-medium mb-4">
                   {feature.number}
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg md:text-2xl font-semibold text-gray-900 mb-3 leading-snug">
                   {feature.title}
                 </h3>
-                <p className="text-gray-500 leading-relaxed text-base">
+                <p className="text-gray-500 leading-relaxed text-sm md:text-base">
                   {feature.description}
                 </p>
               </div>

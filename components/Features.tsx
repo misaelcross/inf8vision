@@ -86,33 +86,33 @@ const Features: React.FC = () => {
   const activeFeature = featuresData[activeTab];
 
   return (
-    <section className="py-20 max-w-7xl mx-auto px-6">
+    <section id="pilares" className="py-20 max-w-7xl mx-auto px-3 md:px-6">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight">
+        <h2 className="text-2xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight">
           Essa estrutura se organiza em quatro pilares.
         </h2>
-        <p className="text-xl text-gray-500 leading-relaxed">
+        <p className="text-sm md:text-xl text-gray-500 leading-relaxed">
           Nosso papel é transformar dados, processos e operações em uma visão clara para tomada de decisão.
         </p>
       </div>
 
       {/* Tabs Navigation */}
       <div className="flex justify-center mb-10">
-        <div className="bg-gray-200/40 p-1.5 rounded-full inline-flex flex-wrap justify-center gap-1 sm:gap-2">
+        <div className="bg-gray-200/40 p-1.5 rounded-2xl md:rounded-full w-full md:w-auto grid grid-cols-2 md:inline-flex gap-1 md:gap-2">
           {(Object.keys(featuresData) as TabKey[]).map((key) => {
             const feature = featuresData[key];
             return (
               <button
                 key={key}
                 onClick={() => setActiveTab(key)}
-                className={`flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl md:rounded-full text-sm font-medium transition-all duration-300 ${
                   activeTab === key
                     ? 'bg-white text-gray-900 shadow-sm'
                     : 'text-gray-500 hover:text-gray-900 hover:bg-gray-200/50'
                 }`}
               >
-                <feature.icon size={18} />
+                <feature.icon size={16} />
                 <span>{feature.label}</span>
               </button>
             );
@@ -142,7 +142,7 @@ const Features: React.FC = () => {
               </span>
             </div>
 
-            <h3 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 leading-tight">
+            <h3 className="text-2xl md:text-4xl font-semibold text-gray-900 mb-6 leading-tight">
               {activeFeature.title}
             </h3>
 

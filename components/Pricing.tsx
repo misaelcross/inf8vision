@@ -62,7 +62,7 @@ const Pricing: React.FC = () => {
           <div className="absolute inset-0 bg-black/60 backdrop-blur-[2px]"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-3 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 p-0 md:p-8">
           
           {/* Left Column: Header, Tabs, Social Proof */}
@@ -133,12 +133,12 @@ const Pricing: React.FC = () => {
                 </p>
 
                 {/* Action Button - Light Yellow */}
-                <button className="w-auto bg-[#fef7af] hover:bg-[#eae39e] text-black font-semibold py-3 pl-6 pr-2 rounded-full flex items-center gap-3 transition-all mb-10 group shadow-[0_0_20px_rgba(254,247,175,0.3)]">
+                <a href="#contact" className="w-auto bg-[#fef7af] hover:bg-[#eae39e] text-black font-semibold py-3 pl-6 pr-2 rounded-full inline-flex items-center gap-3 transition-all mb-10 group shadow-[0_0_20px_rgba(254,247,175,0.3)]">
                     <span>Falar com consultor</span>
                     <div className="bg-black text-white p-1.5 rounded-full group-hover:rotate-45 transition-transform duration-300">
                         <ArrowRight size={14} />
                     </div>
-                </button>
+                </a>
 
                 {/* Features */}
                 <div className="space-y-4 border-t border-white/10 pt-8">

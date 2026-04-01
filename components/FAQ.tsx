@@ -28,16 +28,16 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 max-w-7xl mx-auto px-6">
+    <section className="py-24 max-w-7xl mx-auto px-3 md:px-6">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
         
         {/* Left Column: Header & CTA */}
         <div className="lg:col-span-5 lg:sticky lg:top-32">
-          <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-2xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight">
             Perguntas<br />
             frequentes
           </h2>
-          <p className="text-lg text-gray-500 mb-8 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-500 mb-8 leading-relaxed">
             Tire suas dúvidas sobre como podemos transformar a gestão da sua empresa através dos dados.
           </p>
           <a href="#contact" className="inline-block border border-gray-900 text-gray-900 text-base font-medium px-8 py-3 rounded-full hover:bg-gray-900 hover:text-white transition-colors duration-300">
@@ -79,7 +79,7 @@ const FAQ: React.FC = () => {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="text-gray-600 leading-relaxed text-base">
+                  <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                     {faq.answer}
                   </p>
                 </div>

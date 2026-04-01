@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* CTA Button */}
-        <button className="bg-black text-white text-sm font-medium pl-4 pr-1 py-1.5 rounded-full flex items-center gap-2 hover:bg-gray-800 transition-colors group">
-          <span>Falar com especialista</span>
+        <button className="bg-black text-white text-xs font-medium pl-4 pr-1 py-1.5 rounded-full flex items-center gap-2 hover:bg-gray-800 transition-colors group">
+          <span>Falar conosco</span>
           <div className="bg-white text-black rounded-full p-1 group-hover:bg-gray-200 transition-colors">
             <ArrowRight size={14} />
           </div>

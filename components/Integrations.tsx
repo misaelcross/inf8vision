@@ -23,27 +23,27 @@ const col2 = logos.slice(7, 14);
 
 const Integrations: React.FC = () => {
   return (
-    <section className="py-20 max-w-7xl mx-auto px-6">
+    <section className="py-20 max-w-7xl mx-auto px-3 md:px-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
         {/* Left Column: Content */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight leading-tight">
+          <h2 className="text-2xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight leading-tight">
             Empresas que crescem com consistência possuem algo em comum
           </h2>
-          <p className="text-xl text-gray-500 leading-relaxed mb-4 max-w-lg">
+          <p className="text-base md:text-xl text-gray-500 leading-relaxed mb-4 max-w-lg">
             Acreditam em nós.
           </p>
-          <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-lg">
+          <p className="text-sm md:text-lg text-gray-500 leading-relaxed mb-10 max-w-lg">
             Estruturamos dados, processos e operações para que empresas consigam crescer com previsibilidade, controle e eficiência.
           </p>
 
-          <button className="bg-black text-white text-base font-medium pl-6 pr-2 py-2.5 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg shadow-black/20">
+          <a href="#pilares" className="bg-black text-white text-base font-medium pl-6 pr-2 py-2.5 rounded-full inline-flex items-center gap-3 hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg shadow-black/20">
             <span>Conhecer os pilares</span>
             <div className="bg-white text-black rounded-full p-1.5">
               <ArrowRight size={16} />
             </div>
-          </button>
+          </a>
         </div>
 
         {/* Right Column: Vertical Marquee with real logos */}

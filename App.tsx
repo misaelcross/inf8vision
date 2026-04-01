@@ -7,7 +7,6 @@ import Features from './components/Features';
 import Integrations from './components/Integrations';
 import Pricing from './components/Pricing';
 import SuccessStories from './components/SuccessStories';
-import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -23,7 +22,6 @@ const App: React.FC = () => {
         <Features />
         <Pricing />
         <SuccessStories />
-        <Testimonials />
         <FAQ />
         <Contact />
         <Footer />

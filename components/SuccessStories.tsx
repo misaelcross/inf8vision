@@ -30,16 +30,16 @@ const phases = [
 
 const SuccessStories: React.FC = () => {
   return (
-    <section className="py-20 max-w-7xl mx-auto px-6">
+    <section className="py-20 max-w-7xl mx-auto px-3 md:px-6">
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="text-xs font-bold tracking-widest uppercase text-gray-400 mb-4 block">
           Modelo de Atuação
         </span>
-        <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight">
+        <h2 className="text-2xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight">
           Da análise à expansão: como estruturamos o crescimento do seu negócio
         </h2>
-        <p className="text-xl text-gray-500 leading-relaxed">
+        <p className="text-sm md:text-xl text-gray-500 leading-relaxed">
           Não atuamos executando tarefas isoladas. Atuamos organizando a base de gestão que sustenta o crescimento do negócio.
         </p>
       </div>

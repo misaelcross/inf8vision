@@ -5,42 +5,45 @@ const areas = ['Marketing', 'Comercial', 'Financeiro', 'Logística', 'Fiscal'];
 
 const Hero: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto px-6">
+    <div className="max-w-7xl mx-auto px-3 md:px-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center mt-8 lg:mt-16">
 
         {/* Left Column: Text Content */}
         <div className="space-y-8 max-w-2xl">
-          <h1 className="text-4xl md:text-5xl lg:text-5xl font-semibold tracking-tight text-gray-900 leading-[1.1]">
-            Estrutura de gestão para empresas que buscam previsibilidade, escala e decisões orientadas por dados
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-900 leading-[1.1]">
+            A Infovision organiza seus dados, estrutura sua operação e transforma crescimento em algo previsível.
           </h1>
 
           <div className="space-y-4">
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg">
+            <p className="text-sm md:text-lg text-gray-600 leading-relaxed max-w-lg">
               Previsibilidade e escala dependem de dados, e esses dados devem estar organizados.
             </p>
 
-            {/* Visual area pills */}
-            <div className="flex flex-wrap items-center gap-2">
+            {/* Area pills — arrows absolutely positioned at each wrapper boundary */}
+            <div className="flex items-center w-full">
               {areas.map((area, i) => (
-                <React.Fragment key={area}>
-                  <span className="bg-white border border-gray-200 text-gray-600 text-sm font-medium px-3.5 py-1.5 rounded-full shadow-sm">
+                <div key={area} className="relative flex-1 min-w-0">
+                  <span className="block w-full bg-white border border-gray-100 text-gray-500 text-[10px] md:text-sm font-medium px-2 md:px-5 py-2.5 md:py-3 rounded-xl md:rounded-2xl shadow-sm text-center leading-none">
                     {area}
                   </span>
                   {i < areas.length - 1 && (
-                    <span className="text-gray-300 text-sm select-none">→</span>
+                    <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 w-5 h-5 md:w-7 md:h-7 bg-black rounded-full flex items-center justify-center shadow-sm">
+                      <ArrowRight size={9} className="text-white md:hidden" />
+                      <ArrowRight size={12} className="text-white hidden md:block" />
+                    </div>
                   )}
-                </React.Fragment>
+                </div>
               ))}
             </div>
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <button className="bg-black text-white text-base font-medium pl-6 pr-2 py-3 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-all transform hover:scale-105">
+            <a href="#pilares" className="bg-black text-white text-base font-medium pl-6 pr-2 py-3 rounded-full flex items-center gap-3 hover:bg-gray-800 transition-all transform hover:scale-105">
               <span>Saiba mais</span>
               <div className="bg-white text-black rounded-full p-1.5">
                 <ArrowRight size={16} />
               </div>
-            </button>
+            </a>
           </div>
         </div>
 
